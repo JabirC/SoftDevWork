@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/occupations")
 def occupation_table():
-    occu_dict = make_dictionary("occupations.csv")
+    occu_dict = make_dictionary("data/occupations.csv")
     return render_template("chart.html",
                            dict = occu_dict,
                            rand= random_job(occu_dict))
