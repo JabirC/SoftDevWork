@@ -9,18 +9,18 @@
 
   <body>
     <h3> Random Selected Occupation: {{rand}}</h3>
-    <table>
+    <table style="width:75%;">
       <tr>
-        <th>Job Class</th>
-        <th>Percentage</th>
-        <th>Start your career</th>
+        {% for heading in tab %}
+        <th>{{heading}}</th>
+        {% endfor %}
       </tr>
       <!-- iterate through the dictionary in key,value pair-->
       {%  for key, value in dict|dictsort %} <!-- dictsort sorts the dictionary in alphabetical order
       so that the keys come out in the same order everytime-->
       <tr>
         <td>{{ key }}</td>
-        <td>{{ value[0] }}</td>    <!--Value is a tuple with the percentage at index 0 -->
+        <td>{{ value[0] }}%</td>    <!--Value is a tuple with the percentage at index 0 -->
         <td><a href= {{ value[1] }} >here</a></td> <!--index 1 contains the URL-->
       </tr>
       {% endfor %}
