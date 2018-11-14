@@ -7,10 +7,10 @@ app =  Flask(__name__)
 
 @app.route("/")
 def init():
-    info = request.urlopen('https://api.nasa.gov/planetary/earth/imagery/?lon=100.75&lat=1.5&date=2014-02-01&cloud_score=True&api_key=xv63WMCZcgZqZSginI4XjlA5dj7djvpftJJydNDi')
+    info = request.urlopen('https://api.nasa.gov/planetary/apod?api_key=xv63WMCZcgZqZSginI4XjlA5dj7djvpftJJydNDi')
     info = info.read()
     dict  = json.loads(info)
-    return render_template("site.html", image=dict['url'])
+    return render_template("site.html", image=dict['url'], explanation=dict['explanation'])
 
 
 
