@@ -1,4 +1,4 @@
-#THINGS TO NOTE
+THINGS TO NOTE
 
 -If website does not work, then my client went over the credit limit
 
