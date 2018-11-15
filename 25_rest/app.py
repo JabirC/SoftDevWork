@@ -4,8 +4,8 @@ from flask import Flask, render_template , request
 import houndify
 
 app = Flask(__name__)
-clientId = "MsX70vzsQjNbSx31FX87OQ=="
-clientKey = "0mk1n0mBX_q9nXSlabXe8caqmAh1J_pohbCV5rLeMwkO8ccImxN6Z8BTPZ6U5E2vTv6C93AIH4eeSTMu7h2zqw=="
+clientId = "MsX70vzsQjNbSx31FX87OQ=="   #Replace with your credentials if website not working (Most likely went over credit limit)
+clientKey = "0mk1n0mBX_q9nXSlabXe8caqmAh1J_pohbCV5rLeMwkO8ccImxN6Z8BTPZ6U5E2vTv6C93AIH4eeSTMu7h2zqw==" #Replace with your credentials if website not working (Most likely went over credit limit)
 userId = "Admin"
 
 
