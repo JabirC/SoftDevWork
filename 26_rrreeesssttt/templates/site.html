@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REEESSTTT</title>
+  </head>
+  <body>
+    <h2>TasteDive API</h2>
+    <h3>A Movie Similar to Titanic</h3>
+    <h4>Name: {{name}}</h4>
+    <p>
+    <h4>Wikipedia Blurb:</h4>
+    {{summary}}
+    </p>
+    <a href="https://www.youtube.com/watch?v={{video}}">Trailer Link</a>
+    <br><br>
+
+    <h2>Food2Fork API</h2>
+    <h3>Recipe for Perfect Iced Coffee</h3>
+    <img src ={{pic}}><br>
+    {% for ingredient in recipe %}
+      {{ingredient}}<br>
+    {% endfor %}
+    <br><br>
+
+    <h2> CalendarIndex API </h2>
+    <h3> Holidays in Canada </h3>
+    {% for dict in holidays %}
+    {{dict['name']}}<br>{{dict['date']}}<br>
+    {% endfor %}
+  </body>
+<html>
