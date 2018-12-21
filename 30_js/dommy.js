@@ -1,3 +1,9 @@
+// team Cassandra Gemini -- Theodore Peters, Jabir Chowdhury
+// SoftDev pd7
+// K30 -- sequential regression III: Season of the Witch
+// 2018-12-21
+
+
 var theList = document.getElementById('thelist').children;
 var header = document.getElementById('h');
 var fibind = 1;
